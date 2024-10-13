@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+#soldier {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 50% 100%, 0% 35%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: green;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    top: 0;
+}
+
+#bloodEffect {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0.6;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameOverMessage {
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    display: none;
+}
